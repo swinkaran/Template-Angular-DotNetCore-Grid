@@ -1,0 +1,9 @@
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\bin\Release\netcoreapp1.1\TestNG2WithCore2.deps.json
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\bin\Release\netcoreapp1.1\TestNG2WithCore2.runtimeconfig.json
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\bin\Release\netcoreapp1.1\TestNG2WithCore2.runtimeconfig.dev.json
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\bin\Release\netcoreapp1.1\TestNG2WithCore2.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\bin\Release\netcoreapp1.1\TestNG2WithCore2.pdb
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Release\netcoreapp1.1\TestNG2WithCore2.csprojResolveAssemblyReference.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Release\netcoreapp1.1\TestNG2WithCore2.AssemblyInfo.cs
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Release\netcoreapp1.1\TestNG2WithCore2.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Release\netcoreapp1.1\TestNG2WithCore2.pdb
