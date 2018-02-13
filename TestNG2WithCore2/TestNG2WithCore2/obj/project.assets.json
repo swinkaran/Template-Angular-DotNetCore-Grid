@@ -9705,10 +9705,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\srikarans\\Documents\\Visual Studio 2017\\Projects\\TestNG2WithCore2\\TestNG2WithCore2\\TestNG2WithCore2.csproj",
+      "projectUniqueName": "C:\\Users\\srikarans\\Documents\\GitHub\\Template-Angular2-DotNetCore\\TestNG2WithCore2\\TestNG2WithCore2\\TestNG2WithCore2.csproj",
       "projectName": "TestNG2WithCore2",
-      "projectPath": "C:\\Users\\srikarans\\Documents\\Visual Studio 2017\\Projects\\TestNG2WithCore2\\TestNG2WithCore2\\TestNG2WithCore2.csproj",
-      "outputPath": "C:\\Users\\srikarans\\Documents\\Visual Studio 2017\\Projects\\TestNG2WithCore2\\TestNG2WithCore2\\obj\\",
+      "projectPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Template-Angular2-DotNetCore\\TestNG2WithCore2\\TestNG2WithCore2\\TestNG2WithCore2.csproj",
+      "outputPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Template-Angular2-DotNetCore\\TestNG2WithCore2\\TestNG2WithCore2\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

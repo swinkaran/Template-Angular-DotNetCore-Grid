@@ -1,0 +1,5 @@
+﻿:host {
+  display: flex;
+  background-color:azure;
+  flex-grow:1;
+}

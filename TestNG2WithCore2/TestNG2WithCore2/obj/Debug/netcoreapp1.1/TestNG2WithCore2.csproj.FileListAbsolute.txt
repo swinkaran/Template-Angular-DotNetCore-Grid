@@ -6,3 +6,12 @@ C:\Users\srikarans\Documents\Visual Studio 2017\Projects\TestNG2WithCore2\TestNG
 C:\Users\srikarans\Documents\Visual Studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.AssemblyInfo.cs
 C:\Users\srikarans\Documents\Visual Studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.dll
 C:\Users\srikarans\Documents\Visual Studio 2017\Projects\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.pdb
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\bin\Debug\netcoreapp1.1\TestNG2WithCore2.deps.json
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\bin\Debug\netcoreapp1.1\TestNG2WithCore2.runtimeconfig.json
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\bin\Debug\netcoreapp1.1\TestNG2WithCore2.runtimeconfig.dev.json
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\bin\Debug\netcoreapp1.1\TestNG2WithCore2.dll
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\bin\Debug\netcoreapp1.1\TestNG2WithCore2.pdb
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.AssemblyInfo.cs
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.dll
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.pdb
+C:\Users\srikarans\Documents\GitHub\Template-Angular2-DotNetCore\TestNG2WithCore2\TestNG2WithCore2\obj\Debug\netcoreapp1.1\TestNG2WithCore2.csprojResolveAssemblyReference.cache
