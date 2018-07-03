@@ -1,0 +1,11 @@
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\bin\Debug\netcoreapp2.0\AngularWithCore2Demo.deps.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\bin\Debug\netcoreapp2.0\AngularWithCore2Demo.runtimeconfig.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\bin\Debug\netcoreapp2.0\AngularWithCore2Demo.runtimeconfig.dev.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\bin\Debug\netcoreapp2.0\AngularWithCore2Demo.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\bin\Debug\netcoreapp2.0\AngularWithCore2Demo.pdb
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.csprojAssemblyReference.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.csproj.CoreCompileInputs.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.AssemblyInfoInputs.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.AssemblyInfo.cs
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\AngularWithCore2Demo\AngularWithCore2Demo\obj\Debug\netcoreapp2.0\AngularWithCore2Demo.pdb
