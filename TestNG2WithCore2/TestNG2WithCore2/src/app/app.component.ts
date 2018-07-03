@@ -9,7 +9,9 @@ import { FrameworkConfigService, FrameworkConfigSettings } from '../fw/services/
 })
 
 export class AppComponent {
+
     constructor(private frameworkConfigService: FrameworkConfigService) {
+
         let config: FrameworkConfigSettings = {
             socialIcons: [
                 { imageFile: 'assets/social-fb-bw.png', alt: 'Facebook', link: 'http://www.facebook.com' },
@@ -21,5 +23,7 @@ export class AppComponent {
             showStatusBar: true,
             showStatusBarBreakpoint: 800
         };
+
+        frameworkConfigService.configure(config);
     }
 }

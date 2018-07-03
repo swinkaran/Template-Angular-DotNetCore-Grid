@@ -4,6 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FrameworkBodyComponent } from './framework-body/framework-body.component';
 import { ContentComponent } from './content/content.component';
 import { TitleBarComponent } from './title-bar/title-bar.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { StatusBarComponent } from './status-bar/status-bar.component';
+
+import { FrameworkConfigService, } from '../fw/services/framework-config.service';
 
 @NgModule({
 
@@ -14,13 +18,17 @@ import { TitleBarComponent } from './title-bar/title-bar.component';
     declarations: [
         FrameworkBodyComponent,
         ContentComponent,
-        TitleBarComponent
+        TitleBarComponent,
+        TopBarComponent,
+        StatusBarComponent
+    ],
+
+    providers: [
+        FrameworkConfigService
     ],
 
     exports: [
         FrameworkBodyComponent,
-        ContentComponent,
-        TitleBarComponent
     ]
 })
 

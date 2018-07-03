@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Demo : {{ title }}</h1>
+
+    <section class="content container-fluid">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Data Table With Full Features</h3>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Flight No</th>
+                        <th>Departure time</th>
+                        <th>Arrival time</th>
+                        <th>Capacity</th>
+                        <th>From city</th>
+                        <th>To city</th>
+                    </tr>
+                </thead>
+                <tr *ngFor="let flight of flights">
+                    <td>{{flight.flightId}}</td>
+                    <td>{{flight.flightNo}}</td>
+                    <td>{{flight.startTime}}</td>
+                    <td>{{flight.endTime}}</td>
+                    <td>{{flight.passengerCapacity}}</td>
+                    <td>{{flight.departureCity}}</td>
+                    <td>{{flight.arrivalCity}}</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
