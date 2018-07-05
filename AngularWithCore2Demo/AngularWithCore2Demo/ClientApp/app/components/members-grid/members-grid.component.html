@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Demo : {{ title }}</h1>
+
+    <section class="content container-fluid">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Data Table With Full Features</h3>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Flight No</th>
+                        <th>Service Provider</th>
+                        <th>Departure time</th>
+                        <th>Arrival time</th>
+                        <th>Capacity</th>
+                        <th>Cost</th>
+                        <th>From city</th>
+                        <th>To city</th>
+                        <th>Flight Class</th>
+                        <th>Flight Rating</th>
+                    </tr>
+                </thead>
+                <tr *ngFor="let flight of flights">
+                    <td>{{flight.flightId}}</td>
+                    <td>{{flight.flightNo | uppercase }}</td>
+                    <td>{{flight.serviceProvider | convertToCaps: 'flight.serviceProvider'}}</td>
+                    <td>{{flight.startTime}}</td>
+                    <td>{{flight.endTime}}</td>
+                    <td>{{flight.passengerCapacity}}</td>
+                    <td>{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
+                    <td>{{flight.departureCity}}</td>
+                    <td>{{flight.arrivalCity}}</td>
+                    <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
+                    <td><pm-star [rating]='flight.flightRating'></pm-star></td>
+                </tr>
+            </table>
+        </div>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+</html>
