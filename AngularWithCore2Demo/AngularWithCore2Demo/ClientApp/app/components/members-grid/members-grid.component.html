@@ -12,6 +12,20 @@
             <div class="box-header">
                 <h3 class="box-title">Data Table With Full Features</h3>
             </div>
+
+            <div style="text-align:right" class='row'>
+                <div class='col-md-6'></div>
+                <div class='col-md-2'>Filter by:</div>
+                <div class='col-md-4'>
+                    <input type='text' [(ngModel)]='listFilter' />
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h3>Filtered by: {{listFilter}} </h3>
+                </div>
+            </div>
+
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -22,13 +36,28 @@
                         <th>Arrival time</th>
                         <th>Capacity</th>
                         <th>Cost</th>
+                        <th>Flyer Status</th>
                         <th>From city</th>
                         <th>To city</th>
                         <th>Flight Class</th>
                         <th>Flight Rating</th>
                     </tr>
                 </thead>
-                <tr *ngFor="let flight of flights">
+                <tr>
+                    <th>No.</th>
+                    <th>Flight No</th>
+                    <th><input type='text' [(ngModel)]='listFilter' /></th>
+                    <th>Departure time</th>
+                    <th>Arrival time</th>
+                    <th>Capacity</th>
+                    <th>Cost</th>
+                    <th>Flyer Status</th>
+                    <th>From city</th>
+                    <th>To city</th>
+                    <th>Flight Class</th>
+                    <th>Flight Rating</th>
+                </tr>
+                <tr *ngFor="let flight of filteredFlights">
                     <td>{{flight.flightId}}</td>
                     <td>{{flight.flightNo | uppercase }}</td>
                     <td>{{flight.serviceProvider | convertToCaps: 'flight.serviceProvider'}}</td>
@@ -36,10 +65,14 @@
                     <td>{{flight.endTime}}</td>
                     <td>{{flight.passengerCapacity}}</td>
                     <td>{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
+                    <td style="background-color:silver; color:white">{{flight.flyerStatus}}</td>
                     <td>{{flight.departureCity}}</td>
                     <td>{{flight.arrivalCity}}</td>
                     <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
-                    <td><pm-star [rating]='flight.flightRating'></pm-star></td>
+                    <td>
+                        <pm-star [rating]='flight.flightRating'
+                                 (notify)='onNotify($event)'></pm-star>
+                    </td>
                 </tr>
             </table>
         </div>
