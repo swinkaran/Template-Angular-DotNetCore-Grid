@@ -13,7 +13,7 @@ export class MembersGrid implements OnInit {
     title = 'Members listing';
     apiValues: string[] = [];
 
-    _listFilter: string = 'qa';
+    _listFilter: string = '';
     get listFilter(): string {
         return this._listFilter;
     }
@@ -112,7 +112,7 @@ export class MembersGrid implements OnInit {
 
     constructor(private _httpService: Http) {
         this.filteredFlights = this.flights;
-        this.listFilter = 'qa';
+        this.listFilter = '';
     }
 
     applyFilter(filterBy: string): IMember[] {
