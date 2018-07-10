@@ -24,6 +24,7 @@
   <ItemGroup>
     <None Remove="ClientApp\app\components\members-grid\member.ts" />
     <None Remove="ClientApp\app\components\members-grid\members-grid.component.ts" />
+    <None Remove="ClientApp\app\components\members-grid\members.service.ts" />
     <None Remove="ClientApp\app\components\shared\convertToCaps.pipe.ts" />
     <None Remove="ClientApp\app\components\shared\star.component.ts" />
   </ItemGroup>
@@ -31,6 +32,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\members-grid\member.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\members-grid\members-grid.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\members-grid\members.service.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\shared\convertToCaps.pipe.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\shared\star.component.ts" />
   </ItemGroup>

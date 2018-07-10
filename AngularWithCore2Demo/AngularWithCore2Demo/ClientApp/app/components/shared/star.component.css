@@ -1,2 +1,8 @@
-﻿body {
+﻿.crop {
+    overflow: hidden;
+}
+
+div {
+    cursor: pointer;
+    color: forestgreen;
 }
