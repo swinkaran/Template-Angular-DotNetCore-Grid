@@ -13,7 +13,7 @@
                 <h3 class="box-title">Data Table With Full Features</h3>
             </div>
 
-            <div style="text-align:right" class='row'>
+            <div style="text-align:right" class='box'>
                 <div class='col-md-6'></div>
                 <div class='col-md-2'>Filter by:</div>
                 <div class='col-md-4'>
@@ -29,6 +29,7 @@
             <table class="table table-bordered">
                 <thead>
                     <tr>
+                        <th></th>
                         <th>No.</th>
                         <th>Flight No</th>
                         <th>Service Provider</th>
@@ -44,6 +45,7 @@
                     </tr>
                 </thead>
                 <tr>
+                    <th></th>
                     <th>No.</th>
                     <th>Flight No</th>
                     <th><input type='text' [(ngModel)]='listFilter' /></th>
@@ -58,20 +60,21 @@
                     <th>Flight Rating</th>
                 </tr>
                 <tr *ngFor="let flight of filteredFlights">
-                    <td>{{flight.flightId}}</td>
+                    <td style="text-align:center"><input type="checkbox" id="chkSelected" /></td>
+                    <td style="text-align:center">{{flight.flightId}}</td>
                     <td>{{flight.flightNo | uppercase }}</td>
                     <td>{{flight.serviceProvider | convertToCaps: 'flight.serviceProvider'}}</td>
                     <td>{{flight.startTime}}</td>
                     <td>{{flight.endTime}}</td>
                     <td>{{flight.passengerCapacity}}</td>
-                    <td>{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
+                    <td  style="text-align:right">{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
                     <td style="background-color:silver; color:white">{{flight.flyerStatus}}</td>
                     <td>{{flight.departureCity}}</td>
                     <td>{{flight.arrivalCity}}</td>
                     <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
                     <td>
-                        <pm-star [rating]='flight.flightRating'
-                                 (notify)='onNotify($event)'></pm-star>
+                        <Grid-star [rating]='flight.flightRating'
+                                 (ratingClicked)='onRatingClicked($event)'></Grid-star>
                     </td>
                 </tr>
             </table>
