@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { IMember } from './member';
 import { MembersService } from './members.service';
@@ -14,7 +14,7 @@ export class MembersGrid implements OnInit {
 
     title = 'Members listing';
     apiValues: string[] = [];
-    
+
     _listFilter: string = '';
     get listFilter(): string {
         return this._listFilter;
@@ -27,8 +27,13 @@ export class MembersGrid implements OnInit {
     filteredFlights: IMember[];
     flights: IMember[];
 
+
     constructor(private _membersService: MembersService) {
         
+    constructor(private _httpService: Http) {
+        this.filteredFlights = this.flights;
+        this.listFilter = '';
+
     }
 
     applyFilter(filterBy: string): IMember[] {
