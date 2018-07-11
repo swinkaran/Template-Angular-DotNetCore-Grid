@@ -32,6 +32,7 @@
                         <th></th>
                         <th>No.</th>
                         <th>Flight No</th>
+                        <th></th>
                         <th>Service Provider</th>
                         <th>Departure time</th>
                         <th>Arrival time</th>
@@ -59,7 +60,7 @@
                     <th>Flight Class</th>
                     <th>Flight Rating</th>
                 </tr>
-                <tr *ngFor="let flight of filteredFlights">
+                <tr *ngFor="let flight of members">
                     <td style="text-align:center"><input type="checkbox" id="chkSelected" /></td>
                     <td style="text-align:center">{{flight.flightId}}</td>
                     <td>{{flight.flightNo | uppercase }}</td>

@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { MembersGrid } from './components/members-grid/members-grid.component';
+import { Invitation } from './components/Invitation/invitation.component';
 import { ConvertToCaps } from './components/shared/convertToCaps.pipe';
 import { StarComponent } from './components/shared/star.component';
 
@@ -20,6 +21,7 @@ import { StarComponent } from './components/shared/star.component';
         CounterComponent,
         FetchDataComponent,
         MembersGrid,
+        Invitation,
         HomeComponent,
         ConvertToCaps,
         StarComponent
@@ -34,6 +36,7 @@ import { StarComponent } from './components/shared/star.component';
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'members-grid', component: MembersGrid },
+            { path: 'invitation', component: Invitation },
             { path: '**', redirectTo: 'home' }
         ])
     ]

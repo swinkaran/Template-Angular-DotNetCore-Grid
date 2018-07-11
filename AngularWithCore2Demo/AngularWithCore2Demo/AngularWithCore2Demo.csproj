@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\app\components\Invitation\invitation.component.ts" />
     <None Remove="ClientApp\app\components\members-grid\member.ts" />
     <None Remove="ClientApp\app\components\members-grid\members-grid.component.ts" />
     <None Remove="ClientApp\app\components\members-grid\members.service.ts" />
@@ -30,6 +31,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="ClientApp\app\components\api\members.json" />
+    <Content Include="ClientApp\app\components\members-grid\members.json" />
+    <Content Include="ClientApp\app\components\shared\members.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\components\Invitation\invitation.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\members-grid\member.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\members-grid\members-grid.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\members-grid\members.service.ts" />
