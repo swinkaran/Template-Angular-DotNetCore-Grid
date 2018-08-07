@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AngularWithCore2Demo.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AngularWithCore2Demo.Controllers
 {
@@ -11,11 +14,25 @@ namespace AngularWithCore2Demo.Controllers
     [Route("api/Members")]
     public class MembersController : Controller
     {
+        static List<Model.VMMember> Members;
+
+        public MembersController()
+        {
+            // Assign values to Accounts
+            Members = InitAccounts();
+        }
+
+        private List<VMMember> InitAccounts()
+        {
+            LoadMembersData();
+            return Members;
+        }
+
         // GET: api/Members
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Model.VMMember> Get()
         {
-            return new string[] { "Roib Holding", "David Ospina", "Bernd Leno", "Calum Chambers" };
+            return Members;
         }
 
         // GET: api/Members/5
@@ -41,6 +58,16 @@ namespace AngularWithCore2Demo.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+        }
+
+        [NonAction]
+        public void LoadMembersData()
+        {
+            using (StreamReader r = new StreamReader("Data/members.json"))
+            {
+                string json = r.ReadToEnd();
+                Members = JsonConvert.DeserializeObject<List<Model.VMMember>>(json);
+            }
         }
     }
 }

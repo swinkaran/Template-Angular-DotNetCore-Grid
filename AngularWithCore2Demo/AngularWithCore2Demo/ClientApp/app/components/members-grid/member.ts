@@ -13,3 +13,10 @@
     flightRating: string;
 }
 
+//export interface IMember {
+//    accountId: number;
+//    accountName: string;
+//    balance: string;
+//    isCreditAllowed: string;
+//}
+

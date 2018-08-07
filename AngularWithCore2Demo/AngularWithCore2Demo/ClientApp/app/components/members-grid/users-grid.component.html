@@ -25,7 +25,7 @@
                     <h3>Filtered by: {{listFilter}} </h3>
                 </div>
             </div>
-
+            <h4>{{userCount}}</h4>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -60,23 +60,12 @@
                     <th>Flight Class</th>
                     <th>Flight Rating</th>
                 </tr>
-                <tr *ngFor="let flight of filteredFlights$">
+                <tr *ngFor="let flight of users">
                     <td style="text-align:center"><input type="checkbox" id="chkSelected" /></td>
-                    <td style="text-align:center">{{flight.flightId}}</td>
-                    <td>{{flight.flightNo | uppercase }}</td>
-                    <td>{{flight.serviceProvider | convertToCaps: 'flight.serviceProvider'}}</td>
-                    <td>{{flight.startTime}}</td>
-                    <td>{{flight.endTime}}</td>
-                    <td>{{flight.passengerCapacity}}</td>
-                    <td  style="text-align:right">{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
-                    <td style="background-color:silver; color:white">{{flight.flyerStatus}}</td>
-                    <td>{{flight.departureCity}}</td>
-                    <td>{{flight.arrivalCity}}</td>
-                    <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
-                    <td>
-                        <Grid-star [rating]='flight.flightRating'
-                                 (ratingClicked)='onRatingClicked($event)'></Grid-star>
-                    </td>
+                    <td style="text-align:center">{{flight.accountId}}</td>
+                    <td>{{flight.accountName }}</td>
+                    <td>{{flight.balance }}</td>
+                    <td>{{flight.isCreditAllowed}}</td>
                 </tr>
             </table>
         </div>

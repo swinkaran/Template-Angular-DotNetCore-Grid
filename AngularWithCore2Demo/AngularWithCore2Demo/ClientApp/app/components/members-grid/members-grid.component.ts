@@ -13,43 +13,59 @@ import { Observable } from 'rxjs/Rx';
 
 export class MembersGrid implements OnInit {
 
-    title = 'Members listing';
+    // Members and properties
+    title = 'User managment listing';
     apiValues: string[] = [];
-
-    public members: Observable<IMember[]>;
-
-    private filteredFlights: IMember[] = [];
-    private flights: IMember[] = [];
-
-    _listFilter: string = '';
+    flightsCount  = 0;
+    
+    public flights$: IMember[];
+    private filteredFlights$: IMember[] = [];
+    filterString: string = '';
+    
     get listFilter(): string {
-        return this._listFilter;
+        return this.filterString;
     }
     set listFilter(value: string) {
-        this._listFilter = value;
-        this.filteredFlights = this.listFilter ? this.applyFilter(this.listFilter) : this.flights;
+        this.filterString = value;
+        this.filteredFlights$ = this.listFilter ? this.applyFilter(this.listFilter) : this.flights$;
     }
 
+    // Constructor
     constructor(private _membersService: MembersService) {
-        this.members = this._membersService.getMembers();
+        this.filteredFlights$ = this.flights$;
+        this.filterString = '';
     }
 
+    //Methods
     applyFilter(filterBy: string): IMember[] {
         filterBy = filterBy.toLocaleLowerCase();
 
-        return this.flights.filter((member: IMember) =>
-            member.serviceProvider.toLocaleLowerCase().indexOf(filterBy) !== -1);
+        return this.flights$.filter((f: IMember) =>
+            f.flightNo.toLocaleLowerCase().indexOf(filterBy) !== -1);
     }
 
+    // Event methods
     onRatingClicked(message: string): void {
         this.title = message;
     }
 
-    ngOnInit(): void {
+    public ngOnInit() {
 
-        this.members = this._membersService.getMembers()
+        this._membersService.fetchUsers().subscribe((_flights: IMember[]) => {
 
-        console.log("number of members are : " + this.members.count);
-        this.filteredFlights = this.flights;
+            // do stuff with our data here.
+            // ....
+            // asign data to our class property in the end
+            // so it will be available to our template
+            this.flights$ = _flights;
+            this.flightsCount = _flights.length;
+
+            //this.members$ = this._membersService.fetchUsers()
+            ////this.userCount = this._membersService.fetchUsers().count;
+            //this.userCount = this.members$.count;
+            //console.log("number of members are : " + this.members$.count);
+            //this.filteredFlights = this._flights;
+
+        });
     }
 }
