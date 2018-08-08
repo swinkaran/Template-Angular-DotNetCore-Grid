@@ -12,7 +12,10 @@ import { CounterComponent } from './components/counter/counter.component';
 import { MembersGrid } from './components/members-grid/members-grid.component';
 import { Invitation } from './components/Invitation/invitation.component';
 import { ConvertToCaps } from './components/shared/convertToCaps.pipe';
-import { StarComponent } from './components/shared/star.component';
+
+// Shared componenets
+import { StarComponent } from './components/shared/star-rating/star.component';
+import { ProgressComponent } from './components/shared/progress/progress.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +27,8 @@ import { StarComponent } from './components/shared/star.component';
         Invitation,
         HomeComponent,
         ConvertToCaps,
-        StarComponent
+        StarComponent,
+        ProgressComponent
     ],
     imports: [
         CommonModule,

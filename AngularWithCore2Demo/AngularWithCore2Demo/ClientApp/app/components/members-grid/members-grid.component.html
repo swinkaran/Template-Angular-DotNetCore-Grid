@@ -60,7 +60,7 @@
                     <th>Flight Class</th>
                     <th>Flight Rating</th>
                 </tr>
-                <tr *ngFor="let flight of filteredFlights$">
+                <tr *ngFor="let flight of flights$">
                     <td style="text-align:center"><input type="checkbox" id="chkSelected" /></td>
                     <td style="text-align:center">{{flight.flightId}}</td>
                     <td>{{flight.flightNo | uppercase }}</td>
@@ -73,6 +73,10 @@
                     <td>{{flight.departureCity}}</td>
                     <td>{{flight.arrivalCity}}</td>
                     <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
+                    <td>
+                        <Grid-progress-bar [rating]='flight.flightRating'
+                                 (ratingClicked)='onRatingClicked($event)'></Grid-progress-bar>
+                    </td>
                     <td>
                         <Grid-star [rating]='flight.flightRating'
                                  (ratingClicked)='onRatingClicked($event)'></Grid-star>
