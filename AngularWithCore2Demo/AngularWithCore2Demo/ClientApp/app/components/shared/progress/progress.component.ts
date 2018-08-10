@@ -9,13 +9,13 @@
 export class ProgressComponent implements OnChanges {
     @Input() rating: number;
     starWidth: number = 86;
-    bgColor: string = "green";
+    bgColor: string = "red";
 
     @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
 
     ngOnChanges(): void {
         this.starWidth = this.rating * 86 / 5;
-        
+        if (this.rating > 4) { this.bgColor = "green" }
     }
 
     onClick(): void {
