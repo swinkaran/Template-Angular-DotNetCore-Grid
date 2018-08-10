@@ -1,3 +1,7 @@
 
 AngularWithCore2Demo/.vs/config/applicationhost.config
 AngularWithCore2Demo/.vs/AngularWithCore2Demo/v15/.suo
+AngularWithCore2Demo/.vs/AngularWithCore2Demo/DesignTimeBuild/.dtbcache
+*.ide
+*.ide-shm
+*.ide-wal
