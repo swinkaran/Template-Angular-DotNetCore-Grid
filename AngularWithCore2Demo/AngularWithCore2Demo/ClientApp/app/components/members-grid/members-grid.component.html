@@ -68,18 +68,24 @@
                     <td>{{flight.startTime}}</td>
                     <td>{{flight.endTime}}</td>
                     <td>{{flight.passengerCapacity}}</td>
-                    <td  style="text-align:right">{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
-                    <td style="background-color:silver; color:white">{{flight.flyerStatus}}</td>
+                    <td style="text-align:right">{{flight.cost | currency:'AUD':true:'1.2-2'}}</td>
+                    <td>
+                        <Grid-label [rating]='flight.flightRating'></Grid-label>
+                    </td>
                     <td>{{flight.departureCity}}</td>
                     <td>{{flight.arrivalCity}}</td>
                     <td style="color:darkgoldenrod;">{{flight.flightClass}}</td>
                     <td>
                         <Grid-progress-bar [rating]='flight.flightRating'
-                                 (ratingClicked)='onRatingClicked($event)'></Grid-progress-bar>
+                                           (ratingClicked)='onRatingClicked($event)'></Grid-progress-bar>
+                    </td>
+                    <td>
+                        <Grid-badge [rating]='flight.flightRating'
+                                    (ratingClicked)='onRatingClicked($event)'></Grid-badge>
                     </td>
                     <td>
                         <Grid-star [rating]='flight.flightRating'
-                                 (ratingClicked)='onRatingClicked($event)'></Grid-star>
+                                   (ratingClicked)='onRatingClicked($event)'></Grid-star>
                     </td>
                 </tr>
             </table>

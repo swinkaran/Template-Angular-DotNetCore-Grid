@@ -16,6 +16,8 @@ import { ConvertToCaps } from './components/shared/convertToCaps.pipe';
 // Shared componenets
 import { StarComponent } from './components/shared/star-rating/star.component';
 import { ProgressComponent } from './components/shared/progress/progress.component';
+import { LabelComponent } from './components/shared/Label/label.component';
+import { BadgeComponent } from './components/shared/badge/badge.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import { ProgressComponent } from './components/shared/progress/progress.compone
         HomeComponent,
         ConvertToCaps,
         StarComponent,
-        ProgressComponent
+        ProgressComponent,
+        LabelComponent,
+        BadgeComponent
     ],
     imports: [
         CommonModule,

@@ -1,0 +1,13 @@
+﻿.crop {
+    overflow: hidden;
+}
+
+div {
+    cursor: pointer;
+}
+
+span {
+    height: inherit;
+    background-color:lightseagreen;
+    height:100%;
+}

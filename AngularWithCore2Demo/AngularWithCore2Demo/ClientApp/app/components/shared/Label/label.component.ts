@@ -1,12 +1,12 @@
 ﻿import { Component, OnChanges, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
-    selector: 'Grid-progress-bar',
-    templateUrl: './progress.component.html',
-    styleUrls: ['./progress.component.css']
+    selector: 'Grid-label',
+    templateUrl: './label.component.html',
+    styleUrls: ['./label.component.css']
 })
 
-export class ProgressComponent implements OnChanges {
+export class LabelComponent implements OnChanges {
     @Input() rating: number;
     starWidth: number = 86;
     bgColor: string = "red";
@@ -15,7 +15,9 @@ export class ProgressComponent implements OnChanges {
 
     ngOnChanges(): void {
         this.starWidth = this.rating * 86 / 5;
-        //if (this.rating > 4) { this.bgColor = "green" }
+        if (this.rating > 4) { this.bgColor = "green" }
+        else if (this.rating > 2) { this.bgColor = "blue" }
+        else { this.bgColor = "red" }
     }
 
     onClick(): void {
