@@ -11,7 +11,8 @@
     "departureCity": "Melbourne",
     "arrivalCity": "Sydney",
     "flightClass": "Premium",
-    "flightRating": "4"
+    "flightRating": "4",
+    "completed": "74"
   },
   {
     "flightId": 2,
@@ -25,7 +26,8 @@
     "departureCity": "Melbourne",
     "arrivalCity": "Canberra",
     "flightClass": "Premium",
-    "flightRating": "3"
+    "flightRating": "3",
+    "completed": "72"
   },
   {
     "flightId": 3,
@@ -39,7 +41,8 @@
     "departureCity": "Sydney",
     "arrivalCity": "Darwin",
     "flightClass": "Saver",
-    "flightRating": "4"
+    "flightRating": "4",
+    "completed": "67"
   },
   {
     "flightId": 4,
@@ -53,7 +56,8 @@
     "departureCity": "Brisbane",
     "arrivalCity": "Canberra",
     "flightClass": "Saver",
-    "flightRating": "3"
+    "flightRating": "3",
+    "completed": "79"
   },
   {
     "flightId": 5,
@@ -67,7 +71,8 @@
     "departureCity": "Perth",
     "arrivalCity": "Canberra",
     "flightClass": "Economy",
-    "flightRating": "5"
+    "flightRating": "5",
+    "completed": "59"
   },
   {
     "flightId": 6,
@@ -81,7 +86,8 @@
     "departureCity": "Perth",
     "arrivalCity": "Adelaide",
     "flightClass": "Premium",
-    "flightRating": "5"
+    "flightRating": "5",
+    "completed": "84"
   },
   {
     "flightId": 7,
@@ -95,7 +101,8 @@
     "departureCity": "Canberra",
     "arrivalCity": "Adelaide",
     "flightClass": "Economy",
-    "flightRating": "5"
+    "flightRating": "5",
+    "completed": "67"
   },
   {
     "flightId": 8,
@@ -109,7 +116,8 @@
     "departureCity": "Canberra",
     "arrivalCity": "Brisbane",
     "flightClass": "Economy",
-    "flightRating": "5"
+    "flightRating": "5",
+    "completed": "22"
   },
   {
     "flightId": 9,
@@ -123,6 +131,7 @@
     "departureCity": "Brisbane",
     "arrivalCity": "Canberra",
     "flightClass": "Economy",
-    "flightRating": "3"
+    "flightRating": "3",
+    "completed": "49"
   }
 ]

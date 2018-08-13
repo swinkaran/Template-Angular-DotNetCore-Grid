@@ -7,18 +7,23 @@
 })
 
 export class ProgressComponent implements OnChanges {
-    @Input() rating: number;
-    starWidth: number = 86;
+    @Input() completed: number;
+    progressWidth: number = 100;
+    progressClass: string = "";
     bgColor: string = "red";
 
     @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
 
     ngOnChanges(): void {
-        this.starWidth = this.rating * 86 / 5;
-        //if (this.rating > 4) { this.bgColor = "green" }
+        this.progressWidth = this.completed;
+
+        if ((this.completed > 0) && (this.completed < 25)) { this.progressClass = "progress-bar progress-bar-striped bg-danger"; }
+        else if ((this.completed > 24) && (this.completed < 50)) { this.progressClass = "progress-bar progress-bar-striped bg-warning"; }
+        else if ((this.completed > 49) && (this.completed < 75)) { this.progressClass = "progress-bar progress-bar-striped bg-info"; }
+        else { this.progressClass = "progress-bar progress-bar-striped bg-success"; }
     }
 
     onClick(): void {
-        this.ratingClicked.emit(`Current flight ratng is ` + this.rating);
+        this.ratingClicked.emit(`Current flight ratng is ` + this.completed + '%');
     }
 }

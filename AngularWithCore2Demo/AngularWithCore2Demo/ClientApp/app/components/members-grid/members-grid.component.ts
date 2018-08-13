@@ -16,12 +16,12 @@ export class MembersGrid implements OnInit {
     // Members and properties
     title = 'User managment listing';
     apiValues: string[] = [];
-    flightsCount  = 0;
-    
+    flightsCount = 0;
+
     public flights$: IMember[];
     private filteredFlights$: IMember[] = [];
     filterString: string = '';
-    
+
     get listFilter(): string {
         return this.filterString;
     }
@@ -52,19 +52,9 @@ export class MembersGrid implements OnInit {
     public ngOnInit() {
 
         this._membersService.fetchUsers().subscribe((_flights: IMember[]) => {
-
-            // do stuff with our data here.
-            // ....
-            // asign data to our class property in the end
-            // so it will be available to our template
             this.flights$ = _flights;
             this.flightsCount = _flights.length;
 
-            //this.members$ = this._membersService.fetchUsers()
-            ////this.userCount = this._membersService.fetchUsers().count;
-            //this.userCount = this.members$.count;
-            //console.log("number of members are : " + this.members$.count);
-            //this.filteredFlights = this._flights;
 
         });
     }

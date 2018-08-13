@@ -14,6 +14,7 @@ export class LabelComponent implements OnChanges {
     @Output() ratingClicked: EventEmitter<string> = new EventEmitter<string>();
 
     ngOnChanges(): void {
+        
         this.starWidth = this.rating * 86 / 5;
         if (this.rating > 4) { this.bgColor = "green" }
         else if (this.rating > 2) { this.bgColor = "blue" }

@@ -8,16 +8,16 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class MembersService {
-    private _membersUrl = 'http://localhost:55727/api/members';
+    private _membersUrl = 'http://localhost:55364/api/members';
 
     constructor(private _http: Http) {
     }
 
     public fetchUsers() {
-        return this._http.get("http://localhost:55727/api/members").map((res: Response) => res.json())
+        return this._http.get("http://localhost:55364/api/members").map((res: Response) => res.json())
     }
 
     public getMembers(): Observable<IMember[]> {
-        return this._http.get("http://localhost:55727/api/members").map((res: Response) => <IMember[]>res.json());
+        return this._http.get("http://localhost:55364/api/members").map((res: Response) => <IMember[]>res.json());
     }
 }

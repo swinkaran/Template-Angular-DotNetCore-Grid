@@ -11,6 +11,7 @@
     arrivalCity: string;
     flightClass: string;
     flightRating: string;
+    completed: string;
 }
 
 //export interface IMember {

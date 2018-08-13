@@ -19,5 +19,6 @@ namespace AngularWithCore2Demo.Model
         public String arrivalCity;
         public String flightClass;
         public String flightRating;
+        public String completed;
     }
 }
