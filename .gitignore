@@ -9,3 +9,6 @@ AngularWithCore2Demo/.vs/AngularWithCore2Demo/v15/Server/sqlite3/storage.ide
 AngularWithCore2Demo/.vs/AngularWithCore2Demo/v15/Server/sqlite3/storage.ide
 AngularWithCore2Demo/.vs/AngularWithCore2Demo/v15/Server/sqlite3/storage.ide-shm
 AngularWithCore2Demo/.vs/AngularWithCore2Demo/v15/Server/sqlite3/storage.ide-wal
+*.dll
+*.pdb
+*.cache

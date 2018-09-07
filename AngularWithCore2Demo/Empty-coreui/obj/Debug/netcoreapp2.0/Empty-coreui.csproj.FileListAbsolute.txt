@@ -1,0 +1,11 @@
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\bin\Debug\netcoreapp2.0\Empty-coreui.deps.json
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\bin\Debug\netcoreapp2.0\Empty-coreui.runtimeconfig.json
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\bin\Debug\netcoreapp2.0\Empty-coreui.runtimeconfig.dev.json
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\bin\Debug\netcoreapp2.0\Empty-coreui.dll
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\bin\Debug\netcoreapp2.0\Empty-coreui.pdb
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.csprojAssemblyReference.cache
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.csproj.CoreCompileInputs.cache
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.AssemblyInfoInputs.cache
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.AssemblyInfo.cs
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.dll
+C:\Users\srikarans\Documents\Visual Studio 2017\Projects\WebApplication6 - Copy\Empty-coreui\obj\Debug\netcoreapp2.0\Empty-coreui.pdb

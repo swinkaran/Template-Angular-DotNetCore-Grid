@@ -1,0 +1,10 @@
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\bin\Debug\netcoreapp2.0\CoreUI-Empty-Template.deps.json
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\bin\Debug\netcoreapp2.0\CoreUI-Empty-Template.runtimeconfig.json
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\bin\Debug\netcoreapp2.0\CoreUI-Empty-Template.runtimeconfig.dev.json
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\bin\Debug\netcoreapp2.0\CoreUI-Empty-Template.dll
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\bin\Debug\netcoreapp2.0\CoreUI-Empty-Template.pdb
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\obj\Debug\netcoreapp2.0\CoreUI-Empty-Template.csproj.CoreCompileInputs.cache
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\obj\Debug\netcoreapp2.0\CoreUI-Empty-Template.AssemblyInfoInputs.cache
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\obj\Debug\netcoreapp2.0\CoreUI-Empty-Template.AssemblyInfo.cs
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\obj\Debug\netcoreapp2.0\CoreUI-Empty-Template.dll
+C:\Users\srikarans\Documents\GitHub\Angular-core-admin\Core-CoreUI-Empty\Empty-coreui\obj\Debug\netcoreapp2.0\CoreUI-Empty-Template.pdb
