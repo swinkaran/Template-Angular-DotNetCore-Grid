@@ -54,8 +54,7 @@ export class MembersGrid implements OnInit {
         this._membersService.fetchUsers().subscribe((_flights: IMember[]) => {
             this.flights$ = _flights;
             this.flightsCount = _flights.length;
-
-
+            
         });
     }
 }

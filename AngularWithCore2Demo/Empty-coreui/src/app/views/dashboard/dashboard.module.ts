@@ -7,14 +7,17 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
+//Grid components
+import { GridAvatarComponent } from './grid/avatar/avatar.component';
+
 @NgModule({
   imports: [
     FormsModule,
     DashboardRoutingModule,
     ChartsModule,
     BsDropdownModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
   ],
-  declarations: [ DashboardComponent ]
+  declarations: [DashboardComponent, GridAvatarComponent]
 })
 export class DashboardModule { }
