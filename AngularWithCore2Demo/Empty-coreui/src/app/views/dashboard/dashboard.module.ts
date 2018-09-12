@@ -8,7 +8,8 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 //Grid components
-import { GridAvatarComponent } from './grid/avatar/avatar.component';
+import { GridAvatarComponent } from './avatar/avatar.component';
+import { StarComponent } from './star-rating/star.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,9 @@ import { GridAvatarComponent } from './grid/avatar/avatar.component';
     BsDropdownModule,
     ButtonsModule.forRoot(),
   ],
-  declarations: [DashboardComponent, GridAvatarComponent]
+  declarations: [DashboardComponent,
+    GridAvatarComponent,
+    StarComponent
+  ]
 })
 export class DashboardModule { }

@@ -1,7 +1,7 @@
 export const navItems = [
   {
     name: 'Datatable',
-    url: '/dashboard',
+    url: '/grid',
     icon: 'icon-speedometer',
     badge: {
       variant: 'info',

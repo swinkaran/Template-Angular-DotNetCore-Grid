@@ -6,14 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\app\views\grid\star-rating\star.component.ts" />
+    <None Remove="src\app\views\dashboard\avatar\avatar.component.ts" />
+    <None Remove="src\app\views\gridone\avatar\avatar.component.ts" />
+    <None Remove="src\app\views\gridone\grid.module.ts" />
+    <None Remove="src\app\views\dashboard\star-rating\star.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="src\app\views\grid\contact-lookup\" />
-    <Folder Include="src\app\views\grid\county-flag\" />
-    <Folder Include="src\app\views\grid\lookup\" />
-    <Folder Include="src\app\views\grid\progress\" />
+    <Folder Include="src\app\views\dashboard\contact-lookup\" />
+    <Folder Include="src\app\views\dashboard\county-flag\" />
+    <Folder Include="src\app\views\dashboard\lookup\" />
+    <Folder Include="src\app\views\dashboard\trend\" />
+    <Folder Include="src\app\views\dashboard\progress\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -22,7 +26,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\views\grid\star-rating\star.component.ts" />
+    <TypeScriptCompile Include="src\app\views\dashboard\avatar\avatar.component.ts" />
+    <TypeScriptCompile Include="src\app\views\gridone\avatar\avatar.component.ts" />
+    <TypeScriptCompile Include="src\app\views\gridone\grid.module.ts" />
+    <TypeScriptCompile Include="src\app\views\dashboard\star-rating\star.component.ts" />
   </ItemGroup>
 
 </Project>
