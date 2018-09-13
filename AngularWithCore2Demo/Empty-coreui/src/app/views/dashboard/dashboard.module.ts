@@ -10,6 +10,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 //Grid components
 import { GridAvatarComponent } from './avatar/avatar.component';
 import { StarComponent } from './star-rating/star.component';
+import { ProgressComponent } from './progress/progress.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { StarComponent } from './star-rating/star.component';
   ],
   declarations: [DashboardComponent,
     GridAvatarComponent,
-    StarComponent
+    StarComponent,
+    ProgressComponent
   ]
 })
 export class DashboardModule { }

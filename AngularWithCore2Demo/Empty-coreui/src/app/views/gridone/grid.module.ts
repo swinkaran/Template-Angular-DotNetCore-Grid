@@ -6,7 +6,7 @@ import { BaseRoutingModule } from '../base/base-routing.module';
 
 //Grid components
 import { GridAvatarComponent } from './avatar/avatar.component';
-import { StarComponent } from './star-rating/star.component';
+
 
 @NgModule({
   imports: [
